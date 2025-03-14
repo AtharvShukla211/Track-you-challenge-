@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+button {
+    background-color: #fff;
+    color: #ff7e5f;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #feb47b;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+textarea, input {
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+}
+
+#celebrateBtn {
+    background-color: gold;
+    color: black;
+    font-size: 20px;
+    display: none;
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 10px gold; }
+    to { box-shadow: 0 0 30px gold; }
+}
+
+body.celebration-bg {
+    background: linear-gradient(45deg, #ff758c, #ff7eb3, #ff9a9e);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    animation: bgAnimation 10s infinite alternate;
+    overflow: hidden;
+}
+
+@keyframes bgAnimation {
+    from { background-position: left; }
+    to { background-position: right; }
+}
+
+.celebration-container {
+    padding: 20px;
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.glow-text {
+    font-size: 40px;
+    color: gold;
+    text-shadow: 0 0 20px yellow, 0 0 30px orange;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 20px yellow; }
+    to { text-shadow: 0 0 30px orange; }
+}
+
+.quote-heading {
+    color: white;
+    background: #ff4757;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.quote-list {
+    text-align: left;
+    margin: 20px;
+    font-size: 18px;
+}
+
+.quote-list li {
+    margin-bottom: 10px;
+    background: #ffeaa7;
+    padding: 10px;
+    border-radius: 5px;
+    animation: fadeIn 1s ease-in;
+}
+.firework {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: red;
+    border-radius: 50%;
+    animation: explode 1s ease-out;
+}
+
+@keyframes explode {
+    from { transform: scale(1); opacity: 1; }
+    to { transform: scale(4); opacity: 0; }
+}
+
+#fireworksButton {
+    display: block;
+    margin: 30px auto;
+    padding: 15px 30px;
+    font-size: 22px;
+    background: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    from { box-shadow: 0 0 10px #ff4500; }
+    to { box-shadow: 0 0 20px #ff6347; }
+}
+
+#fireworksButton:hover {
+    transform: scale(1.1);
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fireworks-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 20px;
+    background: #ff4b5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}
+
+#fireworksCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#hoorayButton {
+    display: none; /* Button is hidden initially */
+    padding: 15px 30px;
+    font-size: 22px;
+    background: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#hoorayButton.glow {
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 10px #ff5733; }
+    to { box-shadow: 0 0 20px #ff4500; }
+}
+
+#hoorayButton:hover {
+    transform: scale(1.1);
+}
+
+.quote {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff; /* Change to white for better contrast */
+    text-align: center;
+    margin: 20px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
